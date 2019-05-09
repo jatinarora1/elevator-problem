@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8" />
+    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"  integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="  crossorigin="anonymous"></script>
+    <script src="elevator.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="http://hiteshlala.github.io/images/favicon-16x16.png" rel="icon" type="image/x-icon" />
+    
+  </head>
+  <body>
+    <header>
+      <h1>Elevator Simulation</h1>
+      <h3>Problem task for Traveldglobe</h3>
+      <p>and a jQuery solution by Jatin</p>
+    </header>
+
+    <!-- Left most Panel -->
+    <section class="left-side">
+      <p>Overview:<br>
+        Develop code that renders an elevator panel. Add JS code to make the 
+        elevator panel function according to the functional requirements below. 
+        You can control which way the elevator moves by selecting 
+        the floor buttons on the panel. As soon as a button is selected, the 
+        elevator will begin moving toward that floor.
+      </p>
+      <p>UI Requirements:<br>
+        A display panel that indicates the number of the current floor. Green and 
+        red lights indicating whether the elevator is going up (green) or down 
+        (red). Floors are visible behind the elevator panel
+      </p>
+      <p style='margin-bottom:0'>Functional Requirements:</p>
+      <ul>
+        <li>A floor can be selected from the elevator panel.</li>
+        <li>When a floor is selected, its button is highlighted.</li>
+        <li>Clicking on a floor button in the panel will cause the floors in the background to scroll up and down.</li>
+        <li>Multiple floors can be selected and will be executed in the order that they were selected.</li>
+        <li>The chosen button should remain highlighted until the floor is reached.</li>
+        <li>The current floor is shown on the display panel.</li>
+        <li>The elevator's current direction (up/down) is indicated by highlighting the corresponding
+         green and red indicators in the display panel.</li>
+        <li>A visual cue is provided when you have arrived at the selected floor.</li>
+        <li>Selecting a button anchor does not navigate or change the URL.</li>
+      </ul>
+
+      
+    </section>
+    
+    <!-- Elevator Panel Part -->
+    <section class="right-side">
+      <p> Elevator Panel:</p>
+      <div class='elevator-background'>
+      <div class="elevator-panel">
+        <div class='display'>
+          <p class='direction'><font class='up'>⬆ </font><font class='floor'>1</font> <font class='down'>⬇</font> </p>
+        </div>
+        <div class='button center floor8' data-floor='8'>8</div>
+        <div class='button center floor7' data-floor='7'>7</div>
+        <div class='button center floor6' data-floor='6'>6</div>
+        <div class='button center floor5' data-floor='5'>5</div>
+        <div class='button center floor4' data-floor='4'>4</div>
+        <div class='button center floor3' data-floor='3'>3</div>
+        <div class='button center floor2' data-floor='2'>2</div>
+        <div class='button center floor1' data-floor='1'>1</div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Door  -->
+    <section class="door-panel">
+      <div class='door'></div>
+    </section>
+
+  </body>
+</html>
+
